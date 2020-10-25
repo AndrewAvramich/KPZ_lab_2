@@ -11,7 +11,7 @@ public class Main{
 }
 
 
-class Book implements Cloneable,Comparable<Book>{
+final class Book implements Cloneable,Comparable<Book>{
 
     public String Name;
     public int Year;
@@ -55,7 +55,7 @@ class Book implements Cloneable,Comparable<Book>{
     @Override
     public String toString()
     {
-        return "Name is: " + this.Name + "Is about: " + this.Description + "  written by: " + this.Author;
+        return "Name is: " + this.Name + " Is about: " + this.Description + "  written by: " + this.Author;
     }
 
     @Override
