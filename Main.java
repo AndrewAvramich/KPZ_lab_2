@@ -2,8 +2,10 @@ public class Main{
       
     public static void main(String[] args) {
          
-        Book r =new Book("some name", 228, "Vasserman", "test");
-        System.out.println(r.toString());
+        Book book1 = new Book("some name 1", 2001, "Vasserman", "test desc 1");
+        Book book2 = new Book("some name 2", 2019, "London", "test desc 2");
+        System.out.println(book1.toString());
+        System.out.println(book2.toString());
         
     }
 }
@@ -53,7 +55,7 @@ class Book implements Cloneable,Comparable<Book>{
     @Override
     public String toString()
     {
-        return this.Name+" "+this.Description + this.Author;
+        return "Name is: " + this.Name + "Is about: " + this.Description + "  written by: " + this.Author;
     }
 
     @Override
